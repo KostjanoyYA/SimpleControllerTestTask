@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "0491a079-8fed-4b95-9225-c68673d51c11",
+		"name": "Result",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18179457"
+	},
+	"item": [
+		{
+			"name": "Result 200",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "ewq321dsa",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nameC",
+							"value": "valueC1",
+							"type": "text"
+						},
+						{
+							"key": "nameC",
+							"value": "valueC2",
+							"type": "text"
+						},
+						{
+							"key": "nameA",
+							"value": "valueA",
+							"type": "text"
+						},
+						{
+							"key": "nameB",
+							"value": "valueB1",
+							"type": "text"
+						},
+						{
+							"key": "nameB",
+							"value": "valueB2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/result/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"result",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Result 403 Bad auth 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nameC",
+							"value": "valueC1",
+							"type": "text"
+						},
+						{
+							"key": "nameC",
+							"value": "valueC2",
+							"type": "text"
+						},
+						{
+							"key": "nameA",
+							"value": "valueA",
+							"type": "text"
+						},
+						{
+							"key": "nameB",
+							"value": "valueB1",
+							"type": "text"
+						},
+						{
+							"key": "nameB",
+							"value": "valueB2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/result/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"result",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Result 403 Bad auth 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "wrong",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nameC",
+							"value": "valueC1",
+							"type": "text"
+						},
+						{
+							"key": "nameC",
+							"value": "valueC2",
+							"type": "text"
+						},
+						{
+							"key": "nameA",
+							"value": "valueA",
+							"type": "text"
+						},
+						{
+							"key": "nameB",
+							"value": "valueB1",
+							"type": "text"
+						},
+						{
+							"key": "nameB",
+							"value": "valueB2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/result/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"result",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Result 400 Bad path variable",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "ewq321dsa",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nameC",
+							"value": "valueC1",
+							"type": "text"
+						},
+						{
+							"key": "nameC",
+							"value": "valueC2",
+							"type": "text"
+						},
+						{
+							"key": "nameA",
+							"value": "valueA",
+							"type": "text"
+						},
+						{
+							"key": "nameB",
+							"value": "valueB1",
+							"type": "text"
+						},
+						{
+							"key": "nameB",
+							"value": "valueB2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/result/-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"result",
+						"-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Result 400 Bad content validation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "ewq321dsa",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/result/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"result",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
